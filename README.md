@@ -14,4 +14,4 @@
 ```
 
 ### Пример
-<img src="https://raw.githubusercontent.com/mihail-174/dopolnitelnye-polia-dlia-ucoz/master/screenshot.png">
+<img src="https://raw.githubusercontent.com/mihail-174/endless-additional-fields-for-ucoz/master/screenshot.png">
