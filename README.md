@@ -1,17 +1,17 @@
-# Бесконечные дополнительные поля для ucoz
+# Endless additional fields for ucoz
 
-Эта либа предназначена для бесплатных аккаунтов ucoz. Она позволяет добавить бесконечное количество дополнительных полей (ucoz предоставляет в бесплатном аккаунте до 6 полей).
+This is designed for free ucoz accounts. It allows you to add an infinite number of additional fields (ucoz provides up to 6 fields in your free account).
 
-В данном коде поля настроены под тематику "онлайн фильмы", но при желании можно изменить поля под любые другие проекты.
+In this code, the fields are set up under the theme of "online movies", but you can change the fields for any other projects.
 
-файл "addedit-online.js" подключать в шаблоне "Страница добавления/редактирования материала" <br>
-файл "full-online.js" подключать в шаблоне "Страница материала и комментариев к нему"
+file " addedit-online.js" attach template "Page add/edit material" <br>
+file " full-online.js" attach template "Page of the material and comment on it"
 
-При добавлении или редактировании материала вся информация которая введена в поля дописываются к полю "полное описание".
+When you add or edit the material, all the information that is entered in the fields are added to the field "full description".
 
-```
-Единственное ограничение этой либы является ограниченное количество символов в полном описании заданным ucoz
-```
+"`
+The only limitation of this lie is the limited number of characters in the full description given by ucoz
+"`
 
-### Пример
+### Example
 <img src="https://raw.githubusercontent.com/mihail-174/endless-additional-fields-for-ucoz/master/screenshot.png">
