@@ -38,7 +38,7 @@ var inputs = [
     "name": "Trailer",
     "system_name": "fields-trailer",
     "fields": [
-      {"name": "preview", "input": "input", "type": "text"}
+      {"name": "Trailer", "input": "input", "type": "text"}
     ]
   }
 ];
