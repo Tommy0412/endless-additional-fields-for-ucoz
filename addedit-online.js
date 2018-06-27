@@ -7,38 +7,38 @@
 
 var inputs = [
   {
-    "name": "Информация о фильме",
+    "name": "Information",
     "system_name": "fields-information",
     "fields": [
-      {"name": "Русское Имя Фильма", "input": "input", "type": "text"},
-      {"name": "Оригинальное Имя Фильма", "input": "input", "type": "text"},
-      {"name": "Произведено в", "input": "input", "type": "text"},
-      {"name": "Дата Выпуска", "input": "input", "type": "text"},
-      {"name": "Жанр Картины", "input": "input", "type": "text"},
-      {"name": "Режиссер Фильма", "input": "input", "type": "text"},
-      {"name": "Длительность Фильма", "input": "input", "type": "text"},
-      {"name": "Главные Роли Исполняют", "textarea": "textarea", "rows": "5"}
+      {"name": "Name Of The Film", "input": "input", "type": "text"},
+      {"name": "Original Movie Name", "input": "input", "type": "text"},
+      {"name": "Produced in", "input": "input", "type": "text"},
+      {"name": "Release day", "input": "input", "type": "text"},
+      {"name": "Genre", "input": "input", "type": "text"},
+      {"name": "Director", "input": "input", "type": "text"},
+      {"name": "Duration", "input": "input", "type": "text"},
+      {"name": "Actors", "textarea": "textarea", "rows": "5"}
     ]
   },
   {
-    "name": "Плеера",
+    "name": "Player",
     "system_name": "fields-player",
     "fields": [
-      {"name": "Плеер 1", "input": "input", "type": "text"}
+      {"name": "Player 1", "input": "input", "type": "text"}
     ]
   },
   {
-    "name": "Сериал",
+    "name": "Series",
     "system_name": "fields-serial",
     "fields": [
-      {"name": "Серия 1", "textarea": "textarea", "rows": "3"}
+      {"name": "Episode 1", "textarea": "textarea", "rows": "3"}
     ]
   },
   {
-    "name": "Трейлер",
+    "name": "Trailer",
     "system_name": "fields-trailer",
     "fields": [
-      {"name": "Анонс", "input": "input", "type": "text"}
+      {"name": "preview", "input": "input", "type": "text"}
     ]
   }
 ];
@@ -89,7 +89,7 @@ $('.fields-trailer .additional-fields__remove-field').remove();
 $('.fields-player, .fields-serial').append(
   '<div class="additional-fields__row additional-fields__add">' +
     '<div class="additional-fields__name-field"></div>' +
-    '<div class="additional-fields__content-field"><input class="additional-fields__add-button" type="button" value="Добавить поле"/></div>' +
+    '<div class="additional-fields__content-field"><input class="additional-fields__add-button" type="button" value="Add field"/></div>' +
   '</div>'
 );
 
@@ -100,10 +100,10 @@ $('.additional-fields__add-button').on('click', function(){
   var name_for_new_field = $(this).parents('.additional-fields').find('h2').text();
   switch( name_for_new_field ) {
     case inputs[1].name:
-      var name_field = 'Плеер '
+      var name_field = 'Player '
       break
     case inputs[2].name:
-      var name_field = 'Серия '
+      var name_field = 'Series '
       break
   }
   $(this).parents('.additional-fields').find('.additional-fields__add').before(
@@ -148,7 +148,7 @@ $('input#bdF77').click(function() {
 
   $('#message').val( $('#message').val() + '</div>' );
 
-  $('#bdF77').after( '<div class="warning-info">Обновите страницу чтобы продолжить редактирование данного материала</div>' );
+  $('#bdF77').after( '<div class="warning-info">Refresh the page to continue editing this material</div>' );
   $('#bdF77, .fields-information, .fields-player, .fields-serial, .fields-trailer').remove();
 });
 function save_fields( field ) {
@@ -161,27 +161,6 @@ function save_fields( field ) {
   });
   // $('#message').val( $('#message').val() + '_end'+field+'_' );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 if ( $('body').hasClass('page-edit') ) {
   // ВЫВОД ИНФОРМАЦИИ В ПОЛЯ "ИНФОРМАЦИЯ О ФИЛЬМЕ"
