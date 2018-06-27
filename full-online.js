@@ -12,17 +12,17 @@ $(document).ready(function(){
 
   var inputs = [
     {
-      "name": "Информация о фильме",
+      "name": "Information",
       "system_name": "fields-information",
       "fields": [
-        {"name": "Русское Имя Фильма", "input": "input", "type": "text"},
-        {"name": "Оригинальное Имя Фильма", "input": "input", "type": "text"},
-        {"name": "Произведено в", "input": "input", "type": "text"},
-        {"name": "Дата Выпуска", "input": "input", "type": "text"},
-        {"name": "Жанр Картины", "input": "input", "type": "text"},
-        {"name": "Режиссер Фильма", "input": "input", "type": "text"},
-        {"name": "Длительность Фильма", "input": "input", "type": "text"},
-        {"name": "Главные Роли Исполняют", "textarea": "textarea", "rows": "5"}
+        {"name": "Name Of The Film", "input": "input", "type": "text"},
+        {"name": "Original Movie Name", "input": "input", "type": "text"},
+        {"name": "Produced in", "input": "input", "type": "text"},
+        {"name": "Release day", "input": "input", "type": "text"},
+        {"name": "Genre", "input": "input", "type": "text"},
+        {"name": "Director", "input": "input", "type": "text"},
+        {"name": "Duration", "input": "input", "type": "text"},
+        {"name": "Actors", "textarea": "textarea", "rows": "5"}
       ]
     }
   ];
@@ -87,7 +87,7 @@ $(document).ready(function(){
   if ( perem_fields ) {
     var tabs = [];
     var tabs_content = [];
-    $('.node__film-players ul').prepend( '<li><a href="#player0">Анонс</li>' );
+    $('.node__film-players ul').prepend( '<li><a href="#player0">Trailer</li>' );
     $('.node__film-players ul').after( '<div id="player0"><iframe width="640" height="360" frameborder="0" allowfullscreen="" scrolling="no" src="' + perem_fields[0].replace(/_field[0-9]*_|_endfield[0-9]*_/g, '') + '"></iframe></div>' );
   }
 
