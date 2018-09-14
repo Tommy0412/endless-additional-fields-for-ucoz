@@ -10,8 +10,8 @@ var inputs = [
     "name": "Information",
     "system_name": "fields-information",
     "fields": [
-      {"name": "Name Of The Film", "input": "input", "type": "text"},
-      {"name": "Original Movie Name", "input": "input", "type": "text"},
+      {"name": "Name", "input": "input", "type": "text"},
+      {"name": "Original Name", "input": "input", "type": "text"},
       {"name": "Produced in", "input": "input", "type": "text"},
       {"name": "Release day", "input": "input", "type": "text"},
       {"name": "Genre", "input": "input", "type": "text"},
